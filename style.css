@@ -19,31 +19,32 @@ body {
   z-index: -1;
 }
 
-.word{
+.word {
+  width: 95%;
+  margin: 0 auto;
+  color: white;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  color: white;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 
-.countdown{
+.countdown {
   text-align: center;
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
-.timer{
+.timer {
   display: flex;
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
 }
 
-.time{
+.time {
   font-weight: bold;
   padding: 0.4rem 0.8rem;
   font-size: 2rem;
@@ -55,10 +56,42 @@ body {
   -moz-border-radius: 0.6rem;
   -ms-border-radius: 0.6rem;
   -o-border-radius: 0.6rem;
+  background-image: linear-gradient(
+    120deg,
+    hsl(157deg 49% 37%) 0%,
+    hsl(142deg 41% 45%) 4%,
+    hsl(117deg 37% 54%) 8%,
+    hsl(93deg 51% 54%) 14%,
+    hsl(75deg 65% 53%) 20%,
+    hsl(62deg 78% 51%) 28%,
+    hsl(62deg 84% 52%) 38%,
+    hsl(92deg 75% 62%) 49%,
+    hsl(142deg 68% 58%) 60%,
+    hsl(168deg 100% 40%) 69%,
+    hsl(180deg 100% 37%) 76%,
+    hsl(187deg 100% 37%) 81%,
+    hsl(195deg 100% 40%) 86%,
+    hsl(213deg 63% 57%) 89%,
+    hsl(256deg 47% 63%) 93%,
+    hsl(311deg 44% 54%) 95%,
+    hsl(337deg 67% 53%) 98%,
+    hsl(0deg 65% 52%) 100%
+  );
+  color: rgb(206, 36, 36);
 }
 
-.countdown_container{
+.countdown_container {
   font-size: 1rem;
   font-weight: bold;
   color: rgb(233, 233, 233);
+}
+
+p {
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+#name {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-style: italic;
 }

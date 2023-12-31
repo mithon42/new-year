@@ -1,7 +1,11 @@
+const userName = document.getElementById("name");
 const yearEl = document.getElementById("year");
 const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
+
+const userInput = prompt("Enter Your Name");
+userName.innerHTML = userInput;
 
 function updateTimer() {
   const date = new Date();
