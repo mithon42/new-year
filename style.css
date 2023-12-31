@@ -22,7 +22,7 @@ body {
 .word {
   width: 95%;
   margin: 0 auto;
-  color: white;
+  color: rgb(230, 230, 230);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
